@@ -1,0 +1,170 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+overflow: hidden;
+}
+.logo{
+    width:12%;
+    cursor: pointer;
+}
+.navbar{
+    width:85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color: #fbfcfd;
+    padding: 5px 10px;
+    background-color: transparent;
+    border:1px solid #fff ;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.content{
+    color: #fbfcfd;
+    position: relative;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%)
+    ;}
+
+    h1{
+        font-size: 50px;
+      margin: 10px 0 30px;
+      line-height: 40px;
+       }
+       .side-bar{
+           width: 50px;
+           height: 100vh;
+           background-color: linear-gradient(#00545d, #000729);
+           position: absolute;
+           right: 0;
+           top: 0;
+       }
+       .menu{
+           display: block;
+           width: 25px;
+           margin: 40px auto 0;
+           cursor: pointer;
+       }
+       .social-sitte img, .useful-link img{
+        width: 25px;
+        margin:5px auto;
+        cursor: pointer;
+       }
+       .social-sitte{
+           width: 40px;
+           top: 40%;
+           position: absolute;
+           text-align: center;
+       }
+       .useful-link{
+        width: 40px;
+        bottom: 8%;
+        position: absolute;
+        text-align: center;
+    }
+    .bubble img{
+        width: 50px;
+        animation: bubble 7s linear infinite;
+      
+    }
+    .bubble{
+        width: 100%;
+        display: flex;
+       align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        bottom:-70px;
+    }
+    @keyframes bubble {
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+        20%{
+            
+            opacity: 1;
+        }
+        40%{
+          
+            opacity: 1;
+        }
+       60%{
+           
+            opacity:1;
+        }
+        80%{
+          
+            opacity: 1;
+        }
+        100%{
+          transform: translateY(-80vh);
+            opacity: 0;
+        }
+        
+    }
+
+    .bubble img:nth-child(1){
+        animation-delay: 1s;
+        width: 20px;
+    }
+    
+    .bubble img:nth-child(2){
+        animation-delay: 0.5s;
+    }
+    
+    .bubble img:nth-child(3){
+        animation-delay: 1.5s;
+        width: 18px;
+    }
+    
+    .bubble img:nth-child(4){
+        animation-delay: 5s;
+    }
+    
+    .bubble img:nth-child(5){
+        animation-delay:4s;
+        width: 15px;
+    }
+    
+    .bubble img:nth-child(6){
+        animation-delay: 2.1s;
+   width: 30px;
+    }
+    
+    .bubble img:nth-child(7){
+        animation-delay:3s;
+    }
+    
+    .bubble img:nth-child(8){
+        animation-delay: 2s;
+        width: 16px;
+    }
+    
+    .bubble img:nth-child(9){
+        animation-delay: 4s;
+        width: 26px;
+    }
+    
+ button:hover{
+        background-color: white;
+        color: black;
+    }
